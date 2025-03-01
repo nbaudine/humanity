@@ -1,0 +1,53 @@
+name: card_game_flutter_flame
+description: Un jeu de société avec cartes en ligne utilisant Flutter et Flame.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  
+  # Flame - moteur de jeu 2D
+  flame: ^1.9.1
+  
+  # Gestion d'état
+  provider: ^6.1.1
+  
+  # Pour la partie multijoueur en ligne
+  web_socket_channel: ^2.4.0
+  socket_io_client: ^2.0.3+1
+  
+  # Firebase pour l'authentification et le stockage (à activer plus tard)
+  # firebase_core: ^2.24.0
+  # firebase_auth: ^4.15.0
+  # cloud_firestore: ^4.13.3
+  
+  # Animations et UI
+  flutter_animate: ^4.3.0
+  google_fonts: ^6.1.0
+  
+  # Utilitaires
+  uuid: ^4.2.1
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  # Structure des assets pour notre jeu de cartes
+  assets:
+    - assets/images/
+    - assets/images/cards/
+    - assets/images/backgrounds/
+    - assets/images/ui/
+    - assets/audio/
+    - assets/fonts/
